@@ -1,3 +1,13 @@
-<p>
-  {{appointment}}
-</p>
+<div
+  style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  "
+>
+  <input [(ngModel)]="newAppointmentTitle" placeholder="title" />
+  <input [(ngModel)]="newAppointmentDate" type="date" placeholder="yy/mm/dd" />
+  <input [(ngModel)]="newAppointmentDescription" type="text" placeholder="discription" />
+  <input [(ngModel)]="newAppointmentTime" type="time" placeholder="time">
+  <button>Add</button>
+</div>
